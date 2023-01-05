@@ -1,0 +1,25 @@
+ZADATAK:
+	Korišćenjem HTML i Sass tehnologija realizovati HTML stranicu prikazanu na slikama.
+	Implementirati sledeće zahteve:
+	
+	1.	Sass kod modularizovati minimalno tako da se korišćene promenljive i mixini pišu u posebnim sass datotekama koje se uključuju u glavni fajl.
+	2.	Boje, fontove kao i ostale korisne vrednosti (po sopstvenoj proceni) izdvojiti u sass promenljive.
+	3.	Realizovati responsive verzije stranice za veliki i mali ekran.
+	4.	Kada se misem predje preko slika, slika treba da se uveća tako da ne remeti ostale u sekciji.
+		(videti primer '4_hover.gif')
+	5.	Kada se pređe mišem preko linkova u glavnoj navigaciji, boja pozadine treba da bude žuta
+		(videti primer '5_hover_mali_ekran.gif')
+	6.	Sliku 'game-console.svg' postaviti kao ikonicu web stranice.
+	7.	Kod male verzije ekrana, navigacioni bar je potrebno postaviti kao na slici 5_hover_mali_ekran.gif
+  	8.  Koristiti git za verzionisanje tokom izrade zadatka. u lokalnom git repozitorijumu kreirati .gitignore datoteku koja odgovara ovom tipu projekta.
+
+BOJE:
+	
+	Žuta:		#eaf09b		(234, 240, 155, 0.9)
+	Narandžasta:	#f99d1c		(249, 157, 28, 1)
+	Crna:		#161616		(22, 22, 22, 1)
+	Siva: 		#4f4f4f		(79, 79, 79, 1)
+
+WEB FONTOVI:
+	Noto Serif, serif    	-       sekcija sa igrama i navigacioni bar
+	Tahoma, sans-serif      -       ceo dokument
