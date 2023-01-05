@@ -28,22 +28,76 @@
         </ul>
     </nav>
     <section>
-        <div>
-            <form action="">
-                <label for="namegame">Naziv igrice</label>
-                <input type="text" name="namegame" id="namegame">
-                <label for="nameconsole">Naziv igrice</label>
-                <input type="text" name="nameconsole" id="nameconsole">
-                <label for="age">Naziv igrice</label>
-                <input type="number" name="age" id="age" min="1">
-                <label for="ganre">Naziv igrice</label>
-                <input type="text" name="ganre" id="ganre">
-                
-            </form>
-        </div>
+
+        <form action="" method="post">
+            <label for="namegame">Naziv igrice</label>
+            <input type="text" name="namegame" id="namegame">
+            <label for="nameconsole">Naziv konzole</label>
+            <input type="text" name="nameconsole" id="nameconsole">
+            <label for="age">Uzrast</label>
+            <input type="number" name="age" id="age" min="1">
+            <label for="ganre">Zanr</label>
+            <input type="text" name="ganre" id="ganre">
+            <label for="price">Cena</label>
+            <input type="range" min="1" max="100" value="50">
+            <label for="grade">Ocena</label>
+            <input type="range" min="1" max="5" value="2.5">
+            <input type="submit" value="Pretrazi">
+
+            <div>
+                <div><img src="./slike/dark-souls.jpeg">
+                    <div><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <h3>Dark Souls</h3>
+                </div>
+                <div><img src="./slike/zelda.jpeg">
+                    <div><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <h3>Zelda: Breath of the Wild</h3>
+                </div>
+                <div><img src="./slike/fifa-21.jpeg">
+                    <div><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <h3>Fifa 2021</h3>
+                </div>
+            </div>
     </section>
-
-
+    <section>
+        <ul>
+            <li><a href="#">Ko smo mi?</a></li>
+            <li><a href="#">Pravilnik o utiscima</a></li>
+            <li><a href="#">Pravilnik o zastiti licnih podataka</a></li>
+            <li><a href="#">Nacin placanja</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Kontaktirajte nas</a></li>
+            <li><a href="#">Kako radi</a></li>
+            <li><a href="#">Objekti</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Izjava o privatnosti</a></li>
+            <li><a href="#">Da li imate objekat?</a></li>
+            <li><a href="#">Najcesce postavljena pitanja</a></li>
+        </ul>
+        <div><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45092.14834624391!2d19.589394149999997!3d45.06025135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475ba12960553357%3A0x4245a9d3e56981b5!2z0J_Qu9Cw0L3RgtCw0LbQsCDQktGA0LDRmtCw0YgsIE1hbsSRZWxvcw!5e0!3m2!1sen!2srs!4v1672926683808!5m2!1sen!2srs"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </section>
+<footer><div><img src="./slike/game-console.svg">
+<p>Game Side | Copyright © 2021</p></div></footer>
 </body>
 
 </html>
