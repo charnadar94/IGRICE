@@ -1,3 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+header {
+  display: flex;
+  align-items: center;
+  background-color: #3d3c3c;
+  height: 15%;
+  padding: 0 2%;
+}
+header img {
+  width: 12%;
+}
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  padding-left: 2%;
+}
+header div h1 {
+  color: #f99d1c;
+  font-family: "Tahoma", sans-serif;
+  font-weight: bold;
+  width: 75%;
+  font-size: 50px;
+}
+header div p {
+  color: white;
+  align-self: flex-end;
+  padding-bottom: 1%;
+}
+
+nav {
+  background-color: #f99d1c;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  font-family: "Noto Serif", serif;
+  padding-right: 40%;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  align-items: center;
+}
+nav img {
+  width: 2%;
+  border-radius: 20px;
+}
+
+.formcontainer {
+  display: flex;
+  align-items: center;
+}
+.formcontainer form {
+  background-color: #3d3c3c;
+  color: white;
+  width: 20%;
+  height: 20%;
+  display: inline-block;
+}
 
 /*# sourceMappingURL=igrice.css.map */
