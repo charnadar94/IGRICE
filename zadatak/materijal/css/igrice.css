@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Tahoma", sans-serif;
 }
 
 header {
@@ -50,21 +51,347 @@ nav ul {
   width: 30%;
   align-items: center;
 }
+nav ul .kategorija {
+  display: none;
+}
 nav img {
   width: 2%;
   border-radius: 20px;
 }
 
 .formcontainer {
+  height: 50%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  margin: 3% 4%;
 }
 .formcontainer form {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  inline-size: 20px;
+  width: 350px;
+  height: 350px;
   background-color: #3d3c3c;
   color: white;
-  width: 20%;
-  height: 20%;
-  display: inline-block;
+}
+.formcontainer form label {
+  text-align: center;
+}
+.formcontainer form input {
+  height: 50px;
+  width: 200px;
+  margin: 1% 22%;
+  border-radius: 20px;
+}
+.formcontainer .games {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(207, 207, 207);
+  width: 75%;
+  height: 100%;
+  padding: 5%;
+  font-size: 12px;
+  text-align: center;
+}
+.formcontainer .games div {
+  height: 70%;
+  width: 100%;
+}
+.formcontainer .games div .stars {
+  padding: 3% 0;
+}
+.formcontainer .games div .stars .checked {
+  color: #f99d1c;
+}
+.formcontainer .games div img {
+  width: 180px;
+  height: 220px;
+}
+.formcontainer .games div img:hover {
+  transform: scale(1.5, 1.5);
+  transition-duration: 500ms;
+}
+
+.questions {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 7% 5%;
+}
+.questions ul li {
+  list-style: none;
+}
+.questions ul li a {
+  color: #161616;
+  text-decoration: none;
+}
+.questions div {
+  text-align: end;
+  font-style: italic;
+  margin-left: 20%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 10%;
+  background: #3d3c3c;
+  color: white;
+}
+footer div {
+  width: 33%;
+}
+footer div img {
+  width: 3%;
+  float: left;
+}
+
+@media screen and (max-width: 950px) {
+  header div h1 {
+    font-size: 38px;
+  }
+  header div p {
+    font-size: 8px;
+    font-weight: bold;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul .kategorija {
+    display: none;
+  }
+  nav img {
+    width: 5%;
+    border: radius 15px;
+    margin-right: 17%;
+  }
+  .formcontainer {
+    height: 50%;
+    width: 92%;
+    margin: 2% 2%;
+  }
+  .formcontainer form {
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    inline-size: 20px;
+    width: 230px;
+    height: 300px;
+    background-color: #3d3c3c;
+    color: white;
+  }
+  .formcontainer form label {
+    font-size: 12px;
+  }
+  .formcontainer form input {
+    height: 30px;
+    width: 160px;
+    margin: 1% 16%;
+    border-radius: 20px;
+  }
+  .formcontainer .games {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(207, 207, 207);
+    width: 70%;
+    height: 100%;
+    padding: 9%;
+    font-size: 10px;
+    text-align: center;
+  }
+  .formcontainer .games div img {
+    width: 100px;
+    height: 150px;
+  }
+  .questions {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 5%;
+  }
+  .questions ul {
+    width: 50%;
+    margin-right: 5%;
+  }
+  .questions ul li {
+    list-style: none;
+  }
+  .questions ul li a {
+    color: #161616;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .questions div {
+    width: 36%;
+    margin-left: 7%;
+  }
+  .questions div p {
+    font-size: 12px;
+    text-align: right;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+    background: #3d3c3c;
+    color: white;
+  }
+  footer div {
+    width: 40%;
+    font-size: larger;
+  }
+  footer div img {
+    width: 5%;
+    float: left;
+  }
+}
+@media screen and (max-width: 650px) {
+  header {
+    display: none;
+  }
+  nav {
+    background-color: #f99d1c;
+    height: 110px;
+    width: 650px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Noto Serif", serif;
+    padding-right: 0;
+    text-align: center;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+  }
+  nav ul li {
+    display: none;
+  }
+  nav ul .kategorija {
+    display: block;
+  }
+  nav ul:hover li {
+    display: block;
+    background-color: #eaf09b;
+  }
+  nav img {
+    width: 7%;
+    border-radius: 10px;
+    margin-right: 85%;
+  }
+  .formcontainer {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5% 5%;
+  }
+  .formcontainer form {
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    inline-size: 20px;
+    width: 550px;
+    height: 350px;
+    background-color: #3d3c3c;
+    color: white;
+  }
+  .formcontainer form label {
+    text-align: center;
+  }
+  .formcontainer form input {
+    height: 50px;
+    width: 400px;
+    margin: 1% 22%;
+    border-radius: 10px;
+  }
+  .formcontainer .games {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: rgb(207, 207, 207);
+    width: 75%;
+    height: 100%;
+    padding: 5%;
+    font-size: 12px;
+    text-align: center;
+  }
+  .formcontainer .games div {
+    height: 70%;
+    width: 100%;
+  }
+  .formcontainer .games div .stars {
+    padding: 3% 0;
+  }
+  .formcontainer .games div .stars .checked {
+    color: #f99d1c;
+  }
+  .formcontainer .games div img {
+    width: 180px;
+    height: 220px;
+  }
+  .formcontainer .games div img:hover {
+    transform: scale(1.5, 1.5);
+    transition-duration: 500ms;
+  }
+  .questions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    margin: 10% 0;
+  }
+  .questions .links {
+    display: flex;
+    align-items: flex-start;
+    width: 500px;
+    margin-top: 4%;
+  }
+  .questions .links ul li {
+    list-style: none;
+  }
+  .questions .links ul li a {
+    color: #161616;
+    text-decoration: none;
+  }
+  .questions div {
+    text-align: justify;
+    font-style: italic;
+    margin-left: 0;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 5%;
+    background: #3d3c3c;
+    color: white;
+  }
+  footer div {
+    width: 50%;
+    font-size: smaller;
+  }
+  footer div img {
+    width: 5%;
+    float: left;
+  }
 }
 
 /*# sourceMappingURL=igrice.css.map */
